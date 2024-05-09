@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L9 Fitness Gym Management - Plans</title>
+  <link rel="stylesheet" href="style.css"> </head>
+<body>
+  <h2>Manage Membership Plans</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Plan Name</th>
+        <th>Description</th>
+        <th>Duration</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Basic Monthly</td>
+        <td>Gym access only</td>
+        <td>1 Month</td>
+        <td>$29.99</td>
+        <td>
+          <a href="edit_plan.php?id=1">Edit</a>
+          <a href="delete_plan.php?id=1">Delete</a>
+        </td>
+      </tr>
+      </tbody>
+  </table>
+  <br>
+  <h3>Create New Plan</h3>
+  <form action="create_plan.php" method="post">
+    <label for="plan_name">Plan Name:</label>
+    <input type="text" name="plan_name" id="plan_name" required>
+    <br>
+    <label for="description">Description:</label>
+    <textarea name="description" id="description" required></textarea>
+    <br>
+    <label for="duration">Duration:</label>
+    <select name="duration" id="duration">
+      <option value="1">1 Month</option>
+      <option value="12">1 Year</option>
+    </select>
+    <br>
+    <label for="price">Price:</label>
+    <input type="number" name="price" id="price" min="0.01" step="0.01" required>
+    <br>
+    <button type="submit">Create Plan</button>
+  </form>
+</body>
+</html>

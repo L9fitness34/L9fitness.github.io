@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("E:/web/dash 1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .logo {
+            max-width: 40px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+        .nav-links img {
+            max-width: 30px;
+            margin-right: 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .welcome-message {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+        .card p {
+            margin-bottom: 10px;
+        }
+        .logout-btn {
+            background-color: #ff4d4d;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-left: 10px;
+        }
+        .logout-btn:hover {
+            background-color: #e60000;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>
+            <img src="E:/web/black.png" alt="Logo" class="logo">
+            L9 Fitness Gym
+        </h1>
+        <div class="nav-links">
+            <img src="E:/web/th.jpg" alt="Home Image" style="max-width: 30px; margin-right: 10px;">
+            <a href="home.html">Home</a>
+        </div>
+        <div class="nav-links">
+            <img src="E:/web/OIP.jpg" alt="Contact Us Image" style="max-width: 30px; margin-right: 10px;">
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="nav-links">
+            <img src="E:/web/setting.jpg" alt="Settings Image" style="max-width: 30px; margin-right: 10px;">
+            <a href="settings.html">Settings</a>
+        </div>
+        <a href="logout.html" class="logout-btn">Logout</a>
+    </div>
+    <div class="container">
+        <div class="welcome-message">
+            <h2>Welcome, User!</h2>
+            <p>This is your dashboard where you can manage your account and access various features.</p>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <h2>Profile</h2>
+                <p>View and edit your profile information.</p>
+            </div>
+            <div class="card">
+                <h2>Messages</h2>
+                <p>Check your inbox and send messages.</p>
+            </div>
+            <!-- Add more cards for other features as needed -->
+        </div>
+    </div>
+</body>
+</html>
